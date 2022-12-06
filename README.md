@@ -3,7 +3,7 @@ This is an implementation of a simpler version of battleship via the Haskell pro
 
 Simply run the Main.hs in your favourite IDE, ensuring that the proj2.hs is in the same directory as Main.hs
 
-## Battleship (modified) Rules
+## Battleship (modified) Rules (provided by University of Melbourne - COMP90048)
 Battleship (modified) is a simple two-player logical guessing game created for this project. You will not find any information about the game anywhere else, but it is a simple game and this specification will tell you all you need to know.
 
 The game is somewhat akin to the game of Battleship™, but somewhat simplified. The game is played on a 4×8 grid, and involves one player, the searcher trying to find the locations of three battleships hidden by the other player, the hider. The searcher continues to guess until they find all the hidden ships. Unlike Battleship™, a guess consists of three different locations, and the game continues until the exact locations of the three hidden ships are guessed in a single guess. After each guess, the hider responds with three numbers:
