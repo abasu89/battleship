@@ -47,12 +47,8 @@ Here is a graphical depiction of the first example above, where ships are shown 
 | 	A|	B|	C|	D|	E|	F|	G|	H|
 |---|---|---|---|---|---|---|---|
 |1	 |||||||S|	 	 	 	 	 	 	
-|---|---|---|---|---|---|---|---|
 |2	 	||S||||||	 	 	 	 	 	 
-|---|---|---|---|---|---|---|---|
 |3	 	||G|	G|	S||||	 	 	 	G|
-|---|---|---|---|---|---|---|---|
 |4	 	|||||||| 	 
-|---|---|---|---|---|---|---|---|
 
 The game finishes once the searcher guesses all three ship locations in a single guess (in any order), such as in the last example above. The object of the game for the searcher is to find the target with the fewest possible guesses.
