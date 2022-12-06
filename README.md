@@ -41,6 +41,7 @@ Here are some example ship locations, guesses, and the feedback provided by the 
 |A1, D2, B3	|A3, D2, H1	|1, 1, 0|
 |A1, D2, B3	|H4, G3, H2	|0, 0, 0|
 |A1, D2, B3	|D2, B3, A1	|3, 0, 0|
+
 Here is a graphical depiction of the first example above, where ships are shown as S and guessed locations are shown as G:
 
 | 	A|	B|	C|	D|	E|	F|	G|	H|
@@ -53,4 +54,5 @@ Here is a graphical depiction of the first example above, where ships are shown 
 |---|---|---|---|---|---|---|---|
 |4	 	|||||||| 	 
 |---|---|---|---|---|---|---|---|
+
 The game finishes once the searcher guesses all three ship locations in a single guess (in any order), such as in the last example above. The object of the game for the searcher is to find the target with the fewest possible guesses.
