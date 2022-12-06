@@ -14,15 +14,15 @@ the number of guesses that were exactly two spaces away from a ship.
 Each guess is only counted as its closest distance to any ship. For example if a guessed location is exactly the location of one ship and is one square away from another, it counts as exactly locating a ship, and not as one away from a ship. The eight squares adjacent to a square, including diagonally adjacent, are counted as distance 1 away. The sixteen squares adjacent to those squares are considered to be distance 2 away, as illustrated in this diagram of distances from the center square:
 
 | 2 |	2	| 2	| 2 |	2 |
-|---|
+|---|---|---|---|---|
 |2	|1	|1	|1|	2|
-|---|
+|---|---|---|---|---|
 |2	|1	|0	|1	|2|
-|---|
+|---|---|---|---|---|
 |2	|1	|1	|1	|2|
-|---|
+|---|---|---|---|---|
 |2	|2	|2|	2	|2|
-|---|
+|---|---|---|---|---|
 Of course, depending on the location of the center square, some of these locations will actually be outside the board.
 
 Note that this feedback does not tell you which of the guessed locations is close to a ship. Your program will have to work that out; that is the challenge of this project.
@@ -37,29 +37,29 @@ Your list of locations may be written in any order, but the order is not signifi
 Here are some example ship locations, guesses, and the feedback provided by the hider:
 
 |Locations	|Guess	|Feedback|
-|---|
+|---|---|---|
 |H1, B2, D3	|B3, C3, H3	|0, 2, 1|
-|---|
+|---|---|---|
 |H1, B2, D3	|B1, A2, H3	|0, 2, 1|
-|---|
+|---|---|---|
 |H1, B2, D3	|B2, H2, H1	|2, 1, 0|
-|---|
+|---|---|---|
 |A1, D2, B3	|A3, D2, H1	|1, 1, 0|
-|---|
+|---|---|---|
 |A1, D2, B3	|H4, G3, H2	|0, 0, 0|
-|---|
+|---|---|---|
 |A1, D2, B3	|D2, B3, A1	|3, 0, 0|
-|---|
+|---|---|---|
 Here is a graphical depiction of the first example above, where ships are shown as S and guessed locations are shown as G:
 
 | 	A|	B|	C|	D|	E|	F|	G|	H|
-|---|
+|---|---|---|---|---|---|---|---|
 |1	 |||||||S|	 	 	 	 	 	 	
-|---|
+|---|---|---|---|---|---|---|---|
 |2	 	||S||||||	 	 	 	 	 	 
-|---|
+|---|---|---|---|---|---|---|---|
 |3	 	||G|	G|	S||||	 	 	 	G|
-|---|
+|---|---|---|---|---|---|---|---|
 |4	 	|||||||| 	 
-|---|
+|---|---|---|---|---|---|---|---|
 The game finishes once the searcher guesses all three ship locations in a single guess (in any order), such as in the last example above. The object of the game for the searcher is to find the target with the fewest possible guesses.
