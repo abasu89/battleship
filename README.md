@@ -14,6 +14,7 @@ the number of guesses that were exactly two spaces away from a ship.
 Each guess is only counted as its closest distance to any ship. For example if a guessed location is exactly the location of one ship and is one square away from another, it counts as exactly locating a ship, and not as one away from a ship. The eight squares adjacent to a square, including diagonally adjacent, are counted as distance 1 away. The sixteen squares adjacent to those squares are considered to be distance 2 away, as illustrated in this diagram of distances from the center square:
 
 |2|2|2|2|2|
+|---|---|---|---|---|
 |2	|1	|1	|1|	2|
 |2	|1	|0	|1	|2|
 |2	|1	|1	|1	|2|
